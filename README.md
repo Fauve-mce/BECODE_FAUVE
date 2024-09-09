@@ -15,5 +15,3 @@ A l'ancienne on passe par une variable temporaire :
 - word.length donne la longueur de la chaîne (dans ce cas, 10 pour 'Dumbledore').
 ==> Donc, word.length - 1 renvoie 9, qui est l'index du dernier caractère.
 On mélange tout ça word.charAt(word.length - 1) pour avoir comme résultat "e".
-
-### Ex3
