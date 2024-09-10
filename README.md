@@ -28,3 +28,24 @@ Number = converti la chaîne en nombre.
 ### Ex1
 Ici chat n'était pas défini comme une chaîne de carractère lors de la comparaison.
 Les chaînes de caractères doivent être entourées de guillemets. 
+
+
+## 12b.Exercises.md
+
+## Ex2
+Il y avait moyen de le faire sans trop se cassé la tête. 
+- "one" : On peut directement l'ajouter comme première valeur.
+- "two" : On l'extrait de initialArray[2][1].
+- "three" : On l'extrait de initialArray[4][0].
+- "four" : On l'ajoute directement à la fin.
+
+ce qui donne ==>
+
+const result = ["one", initialArray[2][1], initialArray[4][0], "four"];
+
+console.log(result);  // ["one", "two", "three", "four"]
+
+et HOP voilà !
+- En faite on extrait directement les éléments importants de sous-tableaux en accédant à la valeurs indices.
+- On a pas bersoin d'utiliser des méthodes comme splice(), pop(), push(), ca rend le code bcp plus long et difficile à lire!
+- Un code court propore et rapide comme on l'aime.

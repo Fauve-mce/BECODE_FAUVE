@@ -125,3 +125,73 @@
 // }
 // }
 
+
+
+
+//12b.Exercises.md ex1
+// const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"];
+
+// leaderboard.splice(1,1,'Luna');
+// console.log(leaderboard);
+
+// leaderboard.splice(3,1,'Draco')
+// console.log(leaderboard);
+
+
+//12b.Exercises.md ex2
+// const initialArray = [
+//     null,
+//     true,
+//     ["Apple", "two", undefined],
+//     false,
+//     ["three", "BeCode"],
+//     4,
+//     "I am a big bad wolf",
+//     ["one"],
+// ];
+
+// console.log(initialArray.pop());
+// console.log(initialArray);
+
+// console.log(initialArray.shift());
+// console.log(initialArray);
+
+// initialArray.splice(1,1, 'two');
+// console.log(initialArray);
+
+// initialArray.splice(0,1,'one');
+// console.log(initialArray);
+
+// initialArray.splice(3,1, 'four');
+// console.log(initialArray);
+
+// initialArray.push('one');
+// console.log(initialArray);
+
+// console.log(initialArray.pop());
+// console.log(initialArray);
+
+// initialArray.push('one');
+// console.log(initialArray);
+
+// console.log(initialArray.pop());
+// console.log(initialArray);
+
+// console.log(initialArray.pop());
+// console.log(initialArray);
+
+// console.log(initialArray.pop());
+// console.log(initialArray);
+
+// initialArray.splice(2,1, 'three');
+// console.log(initialArray);
+
+
+//12b.Exercises.md ex3
+// const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"];
+
+// const result = [planets.splice(0,1,'Mercury'),planets.push('Saturne')];
+// console.log(planets);
+
+
+
