@@ -216,3 +216,67 @@
 
 // const fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`;
 // console.log(fullAddress);
+
+
+
+
+//16.ForLoops.md ex1
+// for (let i= 2; i <= 20; i+=2){
+//     console.log(i);
+// }
+
+// for (let i= 1; i <= 19; i+=2 ){
+//     console.log(i);
+// }
+
+// for (let i= 100; i>= 1; i-=10){
+//     console.log(i);
+// }
+
+// for (let i=25; i>=0; i-=5){
+//     console.log(i);
+// }
+
+// for (let i=10; i<=1000; i*=10){
+//     console.log(i);
+// }
+
+
+//16.ForLoops.md ex2
+// const animals = ["lion", "pangolim", "zebra", "dog", "cat", "bird"];
+
+// for (let i=5; i>= animals.length - 1; i--){
+//     console.log(animals[i]);
+// }
+
+
+//16.ForLoops.md ex3
+
+// const users = [
+//         { firstName: "Vito", lastName: "Corleone" },
+//         { firstName: "William", lastName: "Wallace" },
+//         { firstName: "Harry", lastName: "Potter" },
+//         { firstName: "Amadeus", lastName: "Mozart" },
+//         { firstName: "Barack", lastName: "Obama" },
+//     ];
+
+// for (let i=0; i<users.length; i++){
+//     console.log(`${i + 1}. My full name is ${users[i].firstName} ${users[i].lastName}.`);
+// }
+
+
+//16.ForLoops.md ex4
+// const seatingChart = [
+//     ["Colas", "Benoit", "Elodie"],
+//     ["Sola", "Irina", "Antonino", "Eli"],
+//     ["John", "Maryna", "Naike", "Fabrice"],
+// ];
+
+
+// for (let i = 0; i < seatingChart.length; i++) {
+//     const row = seatingChart[i];
+//     console.log(`Row ${i+1}`);
+//     for (let j = 0; j < row.length; j++) {
+//     console.log(row[j]);
+//     }
+// }
