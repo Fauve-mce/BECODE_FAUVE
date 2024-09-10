@@ -187,7 +187,7 @@
 // console.log(initialArray);
 
 
-//12b.Exercises.md ex3
+// 12b.Exercises.md ex3
 // const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"];
 
 // const result = [planets.splice(0,1,'Mercury'),planets.push('Saturne')];
@@ -195,3 +195,24 @@
 
 
 
+
+//13.Objects.md ex1
+// const product ={
+//     nom: "iPhone 15",
+//     inStock: "true",
+//     prix: 1249.90,
+//     IncludedInPackage: ["étui", "écouteurs", "chargeur"],
+// };
+
+
+//13.Objects.md ex2
+// const restaurant = {
+//     name: "Ichiran Ramen",
+//     address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+//     city: "Brooklyn",
+//     state: "NY",
+//     zipcode: "11206",
+// };
+
+// const fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`;
+// console.log(fullAddress);

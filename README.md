@@ -43,9 +43,38 @@ ce qui donne ==>
 
 const result = ["one", initialArray[2][1], initialArray[4][0], "four"];
 
-console.log(result);  // ["one", "two", "three", "four"]
+console.log(result);
 
 et HOP voilà !
 - En faite on extrait directement les éléments importants de sous-tableaux en accédant à la valeurs indices.
 - On a pas bersoin d'utiliser des méthodes comme splice(), pop(), push(), ca rend le code bcp plus long et difficile à lire!
 - Un code court propore et rapide comme on l'aime.
+
+
+
+💡OK mais en faite je viens de réalisé que le bute de l'exercice n'est peut être pas de crée un nouveau tableau donc autre possibilité de réponse:
+
+initialArray.splice(0, initialArray.length, "one", initialArray[2][1], initialArray[4][0], "four");
+
+console.log(initialArray);
+
+
+1. La partie splice(0, initialArray.length, ...)
+==> Sa permet de remplacer le contenu du tableau à partir de l'index 0.
+
+2. initialArray.length
+==> Permet de vider le tableau, car length indique combien d'éléments on vas supprimer. Dans ce cas c'est tout les indexs du tableau.
+
+🔎(mais genre imagine je veux juste supprimer deux éléments et les remplacer à partir d'un tableau alors au lieu de mettre length je fait initialArray.splice(1, 2, "A", "B"); )
+Pour la structure ca donne : initialArray.splice(indexDépart, nombreASupprimer, ...élémentsÀAjouter)
+
+3. "one" et "four" sont des valeurs littérales, donc on peut les écrire directement entre guillemets dans le tableau.
+
+4. "two" et "three" sont extraits de initialArray[2][1] et initialArray[4][0].
+
+🔎(Pourquoi on a pas utiliser push ?
+
+en faite, Si on utilisait push(), il faudrait d'abord vider le tableau avec une autre méthode comme par ex(initialArray.length = 0).
+
+puis utiliser push() (initialArray.push("one",...)) pour ajouter chaque nouvel élément un par un. Ce serait moins efficace et plus long. enfin ici se serait en 2lignes au lieu de 1)
+
