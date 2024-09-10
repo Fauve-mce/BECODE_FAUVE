@@ -65,3 +65,63 @@
 // let somme = (num1 + num2);
 
 // alert(`Voici la somme ${somme}`);
+
+
+
+
+// 11b.Exercice.md ex1
+// let nom = prompt("Quel est ton nom ?");
+// let préférence = prompt("Tu préfère chat ou chien ?");
+
+// if(préférence === 'chat'){
+//     alert(`Bonjour, ${nom} Les chats sont null`);
+// } else if (préférence === 'chien'){
+//     alert(`Bonjour, ${nom} Les chiens pas mieux que les chats`);
+// } else {
+//     console.log('Recommence choisi entre chat ou chien :)');
+// }
+
+
+// 11b.Exercice.md ex2
+// const mystery = ""; 
+
+// if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
+//     console.log("YOU GOT IT!!!");
+// } else {
+//     console.log("TRY AGAIN");
+// }
+
+
+// 11b.Exercice.md ex3
+// let age = Number(prompt("Quel age avez vous ?"));
+
+// if (age == 18){
+//     alert(` Félicitations pour votre première année de conduite. Profitez du voyage !`);
+// } else if (age < 18){
+//     alert(`Désolé, vous êtes trop jeune pour conduire cette voiture. Coupure du moteur `);
+// } else {
+//     alert(`Sous tension. Profitez du voyage !`);
+// }
+
+
+// 11b.Exercice.md ex4
+// let fruits = prompt("Quel est ton fruit préféré ?");
+
+// if (fruits == 'bananas'){
+//     alert(`J'aime aussi les bananes`);
+// } else if (fruits == 'strawberry'){
+//     alert(`J'aime beaucoup les fraises`);
+// } 
+
+// if (fruits == 'grape'){
+// let colorgrape = prompt("tu préfère les les raisin violets ou verts ?");
+
+// if (colorgrape == 'purple'){
+//     alert(`J'aime trop les raisins violet !`);
+// } else if (colorgrape == 'green'){
+//     alert(`Je n'aime pas les raisins vert.`);
+// } else {
+//     alert(`Je ne comprend pas le mot ${colorgrape}`);
+// }
+// }
+

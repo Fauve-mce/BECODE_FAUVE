@@ -15,3 +15,16 @@ A l'ancienne on passe par une variable temporaire :
 - word.length donne la longueur de la chaîne (dans ce cas, 10 pour 'Dumbledore').
 ==> Donc, word.length - 1 renvoie 9, qui est l'index du dernier caractère.
 On mélange tout ça word.charAt(word.length - 1) pour avoir comme résultat "e".
+
+## 08.Pratique.md 
+
+### Ex2
+Attention! Tu as oublier d'ajouter Number sans ton code.
+la méthode prompt() renvoie toujours une chaîne de caractères (string), même si l'utilisateur entre un nombre. Donc ne pas oublié de faire la converstion.
+Number = converti la chaîne en nombre.
+
+## 11b.Exercice.md 
+
+### Ex1
+Ici chat n'était pas défini comme une chaîne de carractère lors de la comparaison.
+Les chaînes de caractères doivent être entourées de guillemets. 
