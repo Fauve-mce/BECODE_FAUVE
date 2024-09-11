@@ -345,3 +345,65 @@
     
 
 // }
+
+
+
+
+//20.Exercice.md
+
+// let tâches = [];
+
+
+// let commande;
+// do {
+//     commande = prompt('Entrez une commande (new, list, delete, quit) :').toLowerCase();
+
+//     if (commande === 'new') {
+//         let ajout = prompt('Entrez la tâche à ajouter :');
+//         if (ajout) {
+//             tâches.push(ajout);
+//             alert(`La tâche "${ajout}" a été ajoutée.`);
+//         }
+//     } else if (commande === 'list') {
+        
+//         if (tâches.length === 0) {
+//             alert('Aucune tâche à afficher.');
+//         } else {
+//             let ajoutList = '********* TODO LIST *********\n';
+//             for (let i = 0; i < tâches.length; i++) {
+//                 ajoutList += `${i + 1}. ${tâches[i]}\n`;
+//             }
+//             alert(ajoutList);
+//         }
+//     } else if (commande === 'delete') {
+        
+//         if (tâches.length === 0) {
+//             alert('Aucune tâche à supprimer.');
+//         } else {
+            
+//             let ajoutList = '********* TODO LIST *********\n';
+//             for (let i = 0; i < tâches.length; i++) {
+//                 ajoutList += `${i + 1}. ${tâches[i]}\n`;
+//             }
+
+//             let ajoutNumberStr = prompt(ajoutList + 'Entrez le numéro de la tâche à supprimer :');
+//             let ajoutNumber = parseInt(ajoutNumberStr, 10);
+
+//             if (ajoutNumber > 0 && ajoutNumber <= tâches.length) {
+//                 let removedajout = tâches.splice(ajoutNumber - 1, 1);
+//                 alert(`La tâche "${removedajout[0]}" a été supprimée.`);
+//             } else {
+//                 alert('Numéro de tâche invalide.');
+//             }
+//         }
+//     } else if (commande !== 'quit') {
+        
+//         alert('commande non reconnue.');
+//     }
+// } while (commande !== 'quit');
+
+
+// alert('Vous avez quitter le programme.');
+
+
+
