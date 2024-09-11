@@ -280,3 +280,68 @@
 //     console.log(row[j]);
 //     }
 // }
+
+
+// 11b.Exercice.md ex4
+// let fruits = prompt("Quel est ton fruit préféré ?");
+
+// if (fruits == 'bananas'){
+//     alert(`J'aime aussi les bananes`);
+// } else if (fruits == 'strawberry'){
+//     alert(`J'aime beaucoup les fraises`);
+// } 
+
+// if (fruits == 'grape'){
+// let colorgrape = prompt("tu préfère les les raisin violets ou verts ?");
+
+// if (colorgrape == 'purple'){
+//     alert(`J'aime trop les raisins violet !`);
+// } else if (colorgrape == 'green'){
+//     alert(`Je n'aime pas les raisins vert.`);
+// } else {
+//     alert(`Je ne comprend pas le mot ${colorgrape}`);
+// }
+// }
+
+
+//18.Exercice.md
+// let start = true;
+// while(start){
+
+// let Maxnum = Number(prompt("Entrez un nombre maximum:"));
+
+// while (parseFloat(Maxnum) !== Maxnum || Maxnum <= 0) {
+//     Maxnum = Number(prompt("Ce n'est pas un nombre valide. Entrez un nombre maximum:"));
+// }
+
+// console.log(`le nombre maximal est : ${Maxnum}`);
+
+// const randomnum = Math.floor(Math.random() * Maxnum) + 1;
+
+// let valeurEntrant;
+// let tentatives = 0;
+
+// do{
+//     valeurEntrant = Number(prompt(`Devinez le nombre entre 1 et ${Maxnum}:`));
+//     tentatives++;
+
+//     if(valeurEntrant !== Number(valeurEntrant) || valeurEntrant <= 0 || valeurEntrant > Maxnum){
+//         alert(`Ce n'est pas un nombre valide. Essayez encore.`);
+//     }else if (valeurEntrant < randomnum){
+//         alert(`Cela doit être suppérieur. Essayez encore.`);
+//     }else if (valeurEntrant > randomnum){
+//         alert(`cela doit être inféerieur. Essayez encore.`);
+//     } else {
+//         alert(`Félicitations! Vous avez trouvé le nombre ${randomnum} en ${tentatives} tentatives.`);
+//     }
+// }while (valeurEntrant !== randomnum);
+
+// const reJouer = prompt("Voulez-vous jouer à nouveau ? (oui/non)");
+
+// if (reJouer.toLowerCase() !== 'oui'){
+//         start = false;
+//         alert(`Merci d'avoir joué !`);
+//     }
+    
+
+// }
