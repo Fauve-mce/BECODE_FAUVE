@@ -78,3 +78,8 @@ en faite, Si on utilisait push(), il faudrait d'abord vider le tableau avec une 
 
 puis utiliser push() (initialArray.push("one",...)) pour ajouter chaque nouvel élément un par un. Ce serait moins efficace et plus long. enfin ici se serait en 2lignes au lieu de 1)
 
+
+## 21b.exercices.md 
+
+### ex5
+Le mot return arrête la fonction, c'est pourquoi les lignes après return 4; ne fonctionne pas. Si on souhaites que les autres console.log "Goodbye" et "World" soient également affichés, il faut déplacer le return à la fin de la fonction.

@@ -407,3 +407,172 @@
 
 
 
+
+//21.Exercice.md
+// function myFunctionName(){
+//     console.log("DO");
+//     console.log("RE");
+//     console.log("MI");
+//     console.log("FA");
+//     console.log("SOL");
+//     console.log("LA");
+//     console.log("SI");
+// }
+// myFunctionName();
+// myFunctionName();
+// myFunctionName();
+
+
+
+
+//21b.exercices.md ex1
+// function rollDice(faces, times) {
+//     for (let i = 1; i <= times; i++) {
+//         let result = Math.floor(Math.random() * faces) + 1;
+//         console.log(`Die ${i}: ${result}`);
+//     }
+// }
+
+// rollDice(6, 5);
+// rollDice(7, 10);
+
+
+//21b.exercices.md ex2
+// function repeat(str, times) {
+    
+//     if (typeof times !== 'number' || times < 0) {
+//         console.log("Le deuxième paramètre doit être un nombre valide.");
+//         return;
+//     }
+
+    
+//     let result = str.repeat(times);
+//     console.log(result);
+// }
+
+
+// repeat("$", 5);  
+// repeat("*", 3);  
+// repeat("abc", 0);  
+// repeat("#", "abc");
+
+
+//21b.exercices.md ex3
+// function greet(firstName, lastName) {
+//     let lastInitial = lastName.charAt(0).toUpperCase() + '.';
+//     console.log(`This is ${firstName} ${lastInitial}`);
+// }
+
+// greet("Marlon", "Brando");  
+// greet("John", "Doe");    
+
+
+//21b.exercices.md ex4
+// function sum(a, b) {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         console.log("Les paramètres doivent être des nombres.");
+//         return; 
+//     }
+//     return a + b;
+// }
+
+// const myVariable = sum(7, 6);
+
+// console.log(myVariable); 
+
+
+//21b.exercices.md ex5
+// function logs() {
+//     console.log("Hello");
+//     console.log("World");
+//     console.log("Goodbye");
+//     console.log("World");
+// }
+// const myVariable = logs();
+
+// console.log(myVariable);
+
+
+//21b.exercices.md ex6
+// function isShortWeather(temperature) {
+//     if (temperature >= 24) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(isShortWeather(16));  
+// console.log(isShortWeather(23));  
+// console.log(isShortWeather(-7)); 
+
+
+//21b.exercices.md ex7
+// function lastElement(array) {
+//     if (array.length === 0) {
+//         return null;
+//     } else {
+//         return array[array.length - 1];
+//     }
+// }
+
+// console.log(lastElement([3, 5, 7])); 
+// console.log(lastElement([1]));        
+// console.log(lastElement([]));         
+
+
+//21b.exercices.md ex8
+// function capitalize(string) {
+//     if (string.length === 0) {
+//         return string;
+//     }
+//     return string.charAt(0).toUpperCase() + string.slice(1);
+// }
+
+// console.log(capitalize("eggplant"));       
+// console.log(capitalize("pamplemousse"));  
+// console.log(capitalize("squid"));        
+
+
+//21b.exercices.md ex9
+// function sumArray(array) {
+//     let total = 0;
+
+//     for (let i = 0; i < array.length; i++) {
+//         total = total + array[i]; 
+//     }
+//     return total;
+// }
+
+// console.log(sumArray([1, 2, 3]));       
+// console.log(sumArray([2, 2, 2, 2]));     
+// console.log(sumArray([50, 50, 1]));     
+
+
+//21b.exercices.md ex10
+// function returnDay(dayNumber) {
+
+//     const joursSemaine = [
+//         null,        
+//         "Monday",   
+//         "Tuesday",   
+//         "Wednesday", 
+//         "Thursday", 
+//         "Friday",    
+//         "Saturday",  
+//         "Sunday"     
+//     ];
+
+//     if (dayNumber >= 1 && dayNumber <= 7) {
+//         return joursSemaine[dayNumber];
+//     } else {
+//         return null;
+//     }
+// }
+
+// console.log(returnDay(1));  
+// console.log(returnDay(7));  
+// console.log(returnDay(4));  
+// console.log(returnDay(0)); 
+// console.log(returnDay(8));  
+
