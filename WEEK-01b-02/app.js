@@ -576,3 +576,28 @@
 // console.log(returnDay(0)); 
 // console.log(returnDay(8));  
 
+
+
+
+//23.FunctionExpressionsHigherOrder.md
+
+
+
+
+//24.Méthodes.md
+// const user = {
+//     firstName: "Fauve",
+//     lastName: "Mareels",
+//     age: 26,
+//     printAge: function() {
+//         console.log(`${this.firstName} ${this.lastName} is ${this.age} years old`);
+//     },
+//     aYearHasPast: function() {
+//         this.age += 1;
+//     }
+// };
+
+// user.printAge();
+// user.aYearHasPast();
+// user.printAge();
+
