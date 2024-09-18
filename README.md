@@ -83,3 +83,34 @@ puis utiliser push() (initialArray.push("one",...)) pour ajouter chaque nouvel �
 
 ### ex5
 Le mot return arrête la fonction, c'est pourquoi les lignes après return 4; ne fonctionne pas. Si on souhaites que les autres console.log "Goodbye" et "World" soient également affichés, il faut déplacer le return à la fin de la fonction.
+
+
+
+
+
+
+
+## 01.ALGOS-série1 
+
+### 05.exo.md
+- a et b sont des objects qui represante les prix de deux boissons dans le tableau drinks.
+
+- Les return -1, 1, 0 indiquer si un élément doit venir avant ou après un autre élément.
+
+- La méthode sort() utilise les valeurs retournées par la function pour faire une  coparaison qui aide a déterminer l'ordre des éléments.
+nbr(-) = si a doit apparaître avant b.
+nbr(+) = si a doit apparaître après b.
+0 = si les éléments sont égaux.
+
+- drink.sort(comparePrices);
+
+vas comparer {name: "lemonade", price: 10} et {name: "lime", price: 10} et vas retourner 0 car les prix sont égaux. ils ne changent pas de place.
+
+compare {name: "coke", price: 8} avec {name: "vodka", price: 17} retourne -1 pcq 8 < 17. "Water" sera avant "Coke".
+
+on aurait pu utilisé localCompare() mais ca c'est pour les chaînes de caractères. 
+
+
+
+
+
