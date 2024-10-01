@@ -1,0 +1,35 @@
+body{
+    background-color: hsl(39, 6%, 83%);
+}
+
+h1{
+    color : rgb(12, 37, 134);
+}
+
+span{
+    color:  #d69e36;
+}
+
+.menu li a{
+    color: rgb(134, 12, 110);
+}
+
+.menu li span{
+    color: red;
+}
+
+.menu ul{
+    background-color: hsl(39, 21%, 73%);
+}
+
+.menu ul li span{
+    color: rgb(14, 86, 96);
+}
+
+.menu li div ul li:nth-child(2){
+    background-color: purple;
+}
+
+.content{
+    color: cyan;
+}
