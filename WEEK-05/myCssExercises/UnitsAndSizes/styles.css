@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.blabla{
+    background-color: pink;
+    min-height: 50vh;
+    max-height: 75vh;
+    overflow: hidden;
+}
+
+.i-am-the-boss p{
+    background-color: cyan;
+    padding: 30px 50px;
+    font-size: 1.2rem;
+}
+
+html{
+    font-size: 30px;
+}
+
