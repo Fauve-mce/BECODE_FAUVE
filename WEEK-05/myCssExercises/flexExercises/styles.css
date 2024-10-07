@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+body{
+    background: #2D4480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Positionnement relatif pour la carte */
+}
+
+.card-top{
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px 0px #00000099;
+    width: 288px;
+    height: 469px;
+    border-radius: 27px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 40px; /* Ajout d'espace pour que le bouton ne chevauche pas le contenu */
+}
+
+h1{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 37px;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+    flex-direction: row;
+}
+
+.features{
+    align-self: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    width: 250px;
+    border-bottom: solid;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.features img, .features p {
+    display: inline-block;
+    vertical-align: middle; /* Alignement vertical au milieu */
+}
+
+.features p {
+    margin-left: 10px; /* Espacement entre l'image et le texte */
+    margin-bottom: 10px; /* Espacement entre chaque feature */
+}
+
+.features img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px; /* Même espacement pour l'image et le texte */
+}
+
+.free h2{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.free p{
+    font-family: "Allan", serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: right;
+    color: #2D4480;
+}
+
+.card-button{
+    width: 181px;
+    height: 68px;
+    border-radius: 27px;
+    background: #FFBC0F;
+    margin-top: -34px; /* Utilise une marge négative pour chevaucher la bordure inférieure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+} 
+
+.card-button p{
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32.8px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding-top: 5px;
+    color: #253868;
+}
