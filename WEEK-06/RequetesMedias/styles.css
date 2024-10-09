@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    display: none;
+    height: 100vh;
+}
+
+@media(max-width: 375px){
+    .a{
+    background-color: gold;
+    }
+}
+
+@media(max-width: 768px){
+    .b{
+        background-color: pink;
+        display: block;
+    }
+    .c{
+        display: none;
+    }
+}
+
+@media(max-width: 1280px){
+    .c{
+        background-color: chocolate;
+        display: block;
+    }
+    .d{
+        display: none;
+    }
+}
+
+@media(max-width: 1440px){
+    .d{
+        background-color: cadetblue;
+        display: block;
+    }
+    .e{
+        display: none;
+    }
+}
+
+@media(max-width: 1920px){
+    .e{
+        background-color: cornflowerblue;
+        display: block;
+    }
+}
