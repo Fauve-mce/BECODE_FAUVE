@@ -12,6 +12,10 @@ h2{
 @media(max-width: 375px){
     .a{
     background-color: gold;
+    display: block;
+    }
+    .b{
+        display: none;
     }
 }
 
