@@ -103,19 +103,19 @@
 
 // #region EXERCICE 4
 
-// Sélectionner le conteneur
-// const container = document.querySelector('.container');
+//Sélectionner le conteneur
+const container = document.querySelector('.container');
 
-// // Boucle pour créer les images de Pokémon
-// for (let i = 1; i <= 151; i++) {
-//     // Créer un élément <img>
-//     const img = document.createElement('img');
+// Boucle pour créer les images de Pokémon
+for (let i = 1; i <= 151; i++) {
+    // Créer un élément <img>
+    const img = document.createElement('img');
     
-//     // Définir l'attribut src de l'image avec l'URL du Pokémon correspondant
-//     img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`;
+    // Définir l'attribut src de l'image avec l'URL du Pokémon correspondant
+    img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`;
 
-//     // Ajouter l'image au conteneur
-//     container.appendChild(img);
-// }
+    // Ajouter l'image au conteneur
+    container.appendChild(img);
+}
 
 // #endregion
