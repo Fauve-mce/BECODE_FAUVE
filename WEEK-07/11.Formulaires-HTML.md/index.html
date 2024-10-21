@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <!-- Action indique au navigateur quoi faire lorsque nous soumettons le formulaire. Cela concerne plustot le PHP et le côté serveur. Bref on enlève le action="" dans lz forms>/forms> car on en a pas besoin. -->
+    <!-- required empèche le Submit si les input ne sont pas compléter. -->
+    <form>
+        <label for="username">Enter username:</label>
+        <input type="text" id="username" name="username" placeholder="username" required>
+        <br><br>
+        <label for="email">Enter email:</label>
+        <input type="email" id="email" name="email" placeholder="your email" required>
+        <br><br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="choose a password" required>
+
+        <p>Select your age:</p>
+
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-2">26-50</label>
+        <input type="radio" name="age" value="50+" id="option-3">
+        <label for="option-3">50+</label>
+
+        <br><br>
+
+        <label for="question">Security question:</label>
+        <select name="question" id="question">
+            <option value="q1">What colour are your favourute pair of socks?</option>
+            <option value="q2">If you could be a vegetable, what it be?</option>
+            <option value="q3">What is your best ever security question?</option>
+        </select>
+
+        <br><br>
+
+        <label for="answer">Security question answer:</label>
+        <input type="text" name="answer" id="answer"></input>
+
+        <br><br>
+
+        <label for="bio">Your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+
+        <br><br>
+
+        <input type="submit" value="submit the form">
+
+    </form> 
+
+    <br><br>
+
+    <form action="">
+        <input type="radio" name="gender" value="male"> male <br>
+        <input type="radio" name="gender" value="female"> Famele <br>
+        <input type="radio" name="gender2" value="other"> Other
+    </form>
+
+    <p><b>Notes:</b> When a user click on a radio-button, it becomes checked, and all other radio-buttons with equal name become unchecked. But if you give ex: gender2 you can checked two at the same time.</p>
+
+
+
+
+    <script src="/WEEK-07/11.Formulaires-HTML.md/app.js"></script>
+</body>
+</html>
