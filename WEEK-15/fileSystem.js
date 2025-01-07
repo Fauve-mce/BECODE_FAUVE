@@ -17,4 +17,13 @@ if (!fs.existsSync(dirName)){
 //2.Crée le fichier 'notes.txt' avec son contenu initial
 fs.writeFileSync(fileName, 'I am a Becode warrior', 'utf8'); // fs -> Module. writeFileSync -> Méthode qui permet d'écrire des données dans un fichier de manière synchrone. 'utf8' -> Spécifie l'encodage utilisé. Permet de stocker des caractères dans presque toutes les langues. Garentit que le centenu est enregistré en tant que text lisible.
 console.log(`Fichier '${fileName}' crée avec succès`);
+// Faire (node fileSystem.js) dans le terminal et le dossier 'test' avec fichier 'node.txt' s'affiche.
 
+//3.lire le centenu du fichier 'notes.text' et afficher dans la console.
+fs.readFile(fileName, 'utf8', (err,data) =>{ //readFile -> Permet de lire le contenu du fichier de manière asynchrone. data -> contient le contenu du fichier sous forme de chaîne de caractère (grâce à l'encodage de 'utf8').
+    if (err){
+        console.error('Erreur de lecture du fichier :', err);
+        return;
+    }
+    console.log(`Contenu de ${fileName} : ${data}`);
+});
