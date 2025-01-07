@@ -27,3 +27,21 @@ fs.readFile(fileName, 'utf8', (err,data) =>{ //readFile -> Permet de lire le con
     }
     console.log(`Contenu de ${fileName} : ${data}`);
 });
+
+// 4. Supprimer le fichier 'notes.txt'
+fs.unlink(fileName, (err) =>{
+    if (err){
+        console.log('Erreur de suppression du fichier :', err);
+        return;
+    }
+    console.log(`Fichier '${fileName}' supprimé avec suucès.`);
+});
+
+//5. Supprimer le répertoire 'test' si le fichier est supprimé 
+fs.rmdir(dirName, (err)=>{
+    if (err){
+        console.log('Erreur de suppression du répertoire :', err);
+        return;
+    }
+    console.log(`répertoire '${dirName}' supprimé avec succès.`);
+});
