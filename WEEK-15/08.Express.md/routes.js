@@ -7,6 +7,14 @@ const path = require('path');
 // On crée un objet router d'Express pour gérer les routes.
 const router = express.Router();
 
+// Middleware pour enregistrer la méthode de la requête, l'URL et le code d'état. Permet suivre facilement les requêtes entrantes et leur état de réponse, ce qui est utile pour le débogage et la surveillance du serveur.
+router.use((req, res, next) =>{
+    res.on('finish', () =>{
+        console.log(`${req.method} ${req.url} ${res.statusCode}`);
+    });
+    next();
+});
+
 // Route pour la page d'accueil (URL "/").
 // Cette route répond aux requêtes GET à l'URL racine "/" en envoyant le fichier home.html.
 router.get('/', (req, res) => {
