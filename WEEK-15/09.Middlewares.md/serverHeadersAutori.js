@@ -1,14 +1,23 @@
 const express = require("express");
 const app = express();
 
-app.use(express.json()); // Pour analyser le corps de la requête si besoin (gestion des corps de requêtes JSON)
+app.use(express.json()); // Pour analyser le corps des requêtes JSON
+
+// Middleware pour afficher l'en-tête Authorization pour débogage
+app.use((req, res, next) => {
+    console.log("Authorization Header:", req.get("Authorization")); // Afficher l'en-tête Authorization pour débogage
+    next();
+});
+
+// Ignorer les requêtes GET pour favicon.ico
+app.get('/favicon.ico', (req, res) => res.status(204).send()); // 204 : No Content
 
 // Middleware pour vérifier l'en-tête Authorization
 app.use((req, res, next) => {
-    if (req.get("Authorization") === "123") {
-    next();
+    if (req.method === 'POST' && req.get("Authorization") === "123") {
+        next(); // Si Authorization est valide, passer à la route suivante
     } else {
-        res.status(401).send("Non autorisé");
+        res.status(401).send("Non autorisé"); // Si Authorization est incorrect
     }
 });
 
@@ -19,5 +28,6 @@ app.post("/", (req, res) => {
 
 // Démarrage du serveur
 app.listen(3000, () => {
-    console.log("Écoute sur le port 3000");
+    console.log("Le serveur écoute sur le port 3000");
 });
+
